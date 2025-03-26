@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basketball Player Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- 修改Banner为隐式轮播图 -->
+    <div class="banner">
+        <div class="slides">
+            <div class="slide active" style="background-image: url('banner1.jpg');">
+                <div class="banner-content">
+                    <h1>The King of the Court</h1>
+                    <p>Witness the Legacy of a Basketball Legend</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('banner2.jpg');">
+                <div class="banner-content">
+                    <h1>Season Highlights</h1>
+                    <p>Relive the Best Moments of the Season</p>
+                </div>
+            </div>
+            <div class="slide" style="background-image: url('banner3.jpg');">
+                <div class="banner-content">
+                    <h1>Upcoming Games</h1>
+                    <p>Don't Miss the Next Big Match</p>
+                </div>
+            </div>
+        </div>
+        <div class="controls">
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+    </div>
+
+    <header class="header">
+        <h1>Player Name</h1>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- 修改滚动新闻块 -->
+        <section class="news-ticker">
+            <div class="ticker-content">
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 1</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 2</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 3</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 4</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 5</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 6</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 7</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 8</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 9</div>
+                <div class="ticker-item">这个新闻是关于詹姆斯的赛场表现 10</div>
+            </div>
+        </section>
+
+        <section id="profile" class="profile-section">
+            <div class="player-image">
+                <img src="player.jpg" alt="Player Image">
+            </div>
+            <div class="player-info">
+                <h2>Player Profile</h2>
+                <p>Position: Point Guard</p>
+                <p>Team: Lakers</p>
+                <p>Height: 6'5"</p>
+                <p>Weight: 210 lbs</p>
+            </div>
+        </section>
+
+        <!-- 修改stats-section为卡片式布局 -->
+        <section id="stats" class="stats-section">
+            <h2>Season Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="card-header">Points</div>
+                    <div class="card-body">28.5 PPG</div>
+                    <div class="card-progress">
+                        <div class="progress-bar" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <h3>Assists</h3>
+                    <p>8.2 APG</p>
+                </div>
+                <div class="stat-item">
+                    <h3>Rebounds</h3>
+                    <p>7.5 RPG</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlights" class="highlights-section">
+            <h2>Game Highlights</h2>
+            <div class="video-container">
+                <iframe src="highlight-video.mp4" allowfullscreen></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Basketball Player Profile</p>
+    </footer>
+</body>
+</html>
